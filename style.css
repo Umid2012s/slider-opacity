@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sliderLine {
+    width: 1000px;
+    height: 600px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1000ms;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.prev, .next {
+    padding: 10px 30px;
+    border: none;
+    background: aqua;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+body {
+    background: rgb(109, 236, 109);
+}
